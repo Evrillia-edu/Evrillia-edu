@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="700"
+     height="120"
+     viewBox="0 0 700 120">
+
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#F8BBD0"/>
+    </filter>
+  </defs>
+
+  <!-- Butterfly -->
+  <g filter="url(#shadow)">
+
+    <!-- Flying Animation -->
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="-60,60;760,40;-60,60"
+      dur="12s"
+      repeatCount="indefinite"/>
+
+    <!-- Wing Flap -->
+    <g>
+
+      <animateTransform
+        attributeName="transform"
+        type="scale"
+        values="1 1;1.08 .92;1 1"
+        dur="0.35s"
+        repeatCount="indefinite"/>
+
+      <!-- Left Wings -->
+      <ellipse cx="-12" cy="-8"
+               rx="15" ry="20"
+               fill="#F8BBD0"/>
+
+      <ellipse cx="-14" cy="15"
+               rx="12" ry="16"
+               fill="#FFD9EC"/>
+
+      <!-- Right Wings -->
+      <ellipse cx="12" cy="-8"
+               rx="15" ry="20"
+               fill="#F48FB1"/>
+
+      <ellipse cx="14" cy="15"
+               rx="12" ry="16"
+               fill="#FFC1DD"/>
+
+      <!-- Body -->
+      <rect
+          x="-2"
+          y="-18"
+          width="4"
+          height="40"
+          rx="2"
+          fill="#8E6A79"/>
+
+      <!-- Antennas -->
+      <path
+          d="M-2 -18 Q-8 -28 -12 -30"
+          stroke="#8E6A79"
+          stroke-width="1.5"
+          fill="none"/>
+
+      <path
+          d="M2 -18 Q8 -28 12 -30"
+          stroke="#8E6A79"
+          stroke-width="1.5"
+          fill="none"/>
+
+    </g>
+
+  </g>
+
+  <!-- Sparkles -->
+
+  <text x="120" y="35" font-size="16">
+    ✨
+    <animate attributeName="opacity"
+             values="0;1;0"
+             dur="2s"
+             repeatCount="indefinite"/>
+  </text>
+
+  <text x="280" y="90" font-size="16">
+    🌸
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0 0;0 8;0 0"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </text>
+
+  <text x="520" y="28" font-size="15">
+    ✨
+    <animate attributeName="opacity"
+             values="1;0;1"
+             dur="1.8s"
+             repeatCount="indefinite"/>
+  </text>
+
+</svg>

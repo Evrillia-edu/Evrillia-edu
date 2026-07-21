@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="700"
+     height="120"
+     viewBox="0 0 700 120">
+
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#FFD6E7"/>
+    </filter>
+  </defs>
+
+  <!-- Cloud 1 -->
+  <g filter="url(#shadow)">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="-180 15;720 15;-180 15"
+      dur="28s"
+      repeatCount="indefinite"/>
+
+    <ellipse cx="0" cy="0" rx="28" ry="18" fill="#FFFFFF"/>
+    <ellipse cx="28" cy="-10" rx="24" ry="20" fill="#FFFFFF"/>
+    <ellipse cx="58" cy="0" rx="28" ry="18" fill="#FFFFFF"/>
+    <ellipse cx="28" cy="10" rx="42" ry="16" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Cloud 2 -->
+  <g filter="url(#shadow)">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="760 70;-180 70;760 70"
+      dur="35s"
+      repeatCount="indefinite"/>
+
+    <ellipse cx="0" cy="0" rx="22" ry="14" fill="#FFFDFE"/>
+    <ellipse cx="22" cy="-8" rx="18" ry="16" fill="#FFFDFE"/>
+    <ellipse cx="46" cy="0" rx="22" ry="14" fill="#FFFDFE"/>
+    <ellipse cx="22" cy="8" rx="34" ry="12" fill="#FFFDFE"/>
+  </g>
+
+  <!-- Sparkles -->
+  <text x="150" y="35" font-size="16">
+    ✨
+    <animate attributeName="opacity"
+             values="0;1;0"
+             dur="2s"
+             repeatCount="indefinite"/>
+  </text>
+
+  <text x="520" y="90" font-size="16">
+    ✨
+    <animate attributeName="opacity"
+             values="1;0;1"
+             dur="2.5s"
+             repeatCount="indefinite"/>
+  </text>
+
+</svg>

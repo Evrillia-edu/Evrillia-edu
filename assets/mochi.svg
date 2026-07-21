@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="220"
+     height="220"
+     viewBox="0 0 220 220">
+
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#E8A7C5"/>
+    </filter>
+  </defs>
+
+  <!-- Floating Animation -->
+  <g filter="url(#shadow)">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0 0;0 -6;0 0"
+      dur="2.5s"
+      repeatCount="indefinite"/>
+
+    <!-- Tail -->
+    <path d="M150 125
+             Q185 110 170 85"
+          fill="none"
+          stroke="#F7C8D8"
+          stroke-width="8"
+          stroke-linecap="round">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="-6 150 120;6 150 120;-6 150 120"
+        dur="1.5s"
+        repeatCount="indefinite"/>
+    </path>
+
+    <!-- Body -->
+    <ellipse
+      cx="110"
+      cy="120"
+      rx="48"
+      ry="42"
+      fill="#FFF9FC"/>
+
+    <!-- Head -->
+    <circle
+      cx="110"
+      cy="80"
+      r="42"
+      fill="#FFF9FC"/>
+
+    <!-- Left Ear -->
+    <polygon
+      points="78,52 92,20 105,55"
+      fill="#FFF9FC"/>
+
+    <!-- Right Ear -->
+    <polygon
+      points="142,52 128,20 115,55"
+      fill="#FFF9FC"/>
+
+    <!-- Ear Pink -->
+    <polygon
+      points="83,48 92,30 99,49"
+      fill="#F9B7CF"/>
+
+    <polygon
+      points="137,48 128,30 121,49"
+      fill="#F9B7CF"/>
+
+    <!-- Eyes -->
+    <ellipse x="95" y="78" rx="3" ry="5" fill="#444">
+      <animate attributeName="ry"
+               values="5;5;0.3;5;5"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </ellipse>
+
+    <ellipse x="125" y="78" rx="3" ry="5" fill="#444">
+      <animate attributeName="ry"
+               values="5;5;0.3;5;5"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Nose -->
+    <circle
+      cx="110"
+      cy="92"
+      r="3"
+      fill="#F7A6C3"/>
+
+    <!-- Mouth -->
+    <path
+      d="M110 95
+         Q105 100 100 98"
+      fill="none"
+      stroke="#666"
+      stroke-width="1.8"/>
+
+    <path
+      d="M110 95
+         Q115 100 120 98"
+      fill="none"
+      stroke="#666"
+      stroke-width="1.8"/>
+
+    <!-- Blush -->
+    <circle cx="86" cy="92" r="6"
+            fill="#FFD6E8"
+            opacity=".7"/>
+
+    <circle cx="134" cy="92" r="6"
+            fill="#FFD6E8"
+            opacity=".7"/>
+
+    <!-- Flower -->
+    <text
+      x="98"
+      y="150"
+      font-size="18">
+      🌸
+    </text>
+
+  </g>
+
+</svg>
