@@ -1,1 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="320"
+     viewBox="0 0 1200 320">
 
+  <defs>
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5FB"/>
+      <stop offset="100%" stop-color="#FFE6F3"/>
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#e79dbf"/>
+    </filter>
+
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" rx="30" fill="url(#bg)"/>
+
+  <!-- Clouds -->
+  <g opacity="0.9">
+    <circle cx="150" cy="70" r="22" fill="white"/>
+    <circle cx="175" cy="58" r="24" fill="white"/>
+    <circle cx="205" cy="72" r="22" fill="white"/>
+
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      values="0 0;40 0;0 0"
+      dur="12s"
+      repeatCount="indefinite"/>
+  </g>
+
+  <g opacity="0.9">
+    <circle cx="950" cy="60" r="20" fill="white"/>
+    <circle cx="975" cy="50" r="22" fill="white"/>
+    <circle cx="1005" cy="63" r="20" fill="white"/>
+
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      values="0 0;-35 0;0 0"
+      dur="10s"
+      repeatCount="indefinite"/>
+  </g>
+
+  <!-- Title -->
+  <text
+    x="600"
+    y="120"
+    text-anchor="middle"
+    font-family="Verdana"
+    font-size="42"
+    font-weight="bold"
+    fill="#D85A9D"
+    filter="url(#shadow)">
+      🌸 EVRILLIA 🌸
+  </text>
+
+  <text
+    x="600"
+    y="165"
+    text-anchor="middle"
+    font-family="Verdana"
+    font-size="20"
+    fill="#8A6477">
+      Data Analyst • Data Scientist • Fullstack Developer • IoT Learner
+  </text>
+
+  <!-- Cat -->
+  <text
+    x="600"
+    y="245"
+    text-anchor="middle"
+    font-size="56">
+    🐈
+  </text>
+
+  <!-- Sparkles -->
+  <text x="420" y="100" font-size="20">
+    ✨
+    <animate
+      attributeName="opacity"
+      values="0;1;0"
+      dur="2s"
+      repeatCount="indefinite"/>
+  </text>
+
+  <text x="770" y="95" font-size="20">
+    ✨
+    <animate
+      attributeName="opacity"
+      values="1;0;1"
+      dur="2.5s"
+      repeatCount="indefinite"/>
+  </text>
+
+  <!-- Sakura -->
+  <text x="250" y="40" font-size="22">
+    🌸
+    <animate
+      attributeName="y"
+      values="20;260"
+      dur="8s"
+      repeatCount="indefinite"/>
+  </text>
+
+  <text x="920" y="30" font-size="22">
+    🌸
+    <animate
+      attributeName="y"
+      values="10;250"
+      dur="10s"
+      repeatCount="indefinite"/>
+  </text>
+
+</svg>
